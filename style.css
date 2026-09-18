@@ -1,141 +1,764 @@
-/* Configuração geral da página */
+/* ========================================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ========================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f7fa;
+
+    color: #222222;
+
     line-height: 1.6;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #202a44;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+
+img {
+    width: 100%;
+    display: block;
 }
 
-header h1 {
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================= */
+/* CABEÇALHO */
+/* ========================================= */
+
+.cabecalho {
+    width: 100%;
+
+    background-color: #0a2540;
+
+    color: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo h1 {
+    font-size: 28px;
+
+    color: #38bdf8;
+}
+
+
+/* ========================================= */
+/* MENU */
+/* ========================================= */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.menu a {
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+
+/* ========================================= */
+/* INÍCIO */
+/* ========================================= */
+
+.inicio {
+    min-height: 600px;
+
+    padding: 60px 8%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(10, 37, 64, 0.80),
+            rgba(10, 37, 64, 0.80)
+        ),
+        url("imagens/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+.inicio-conteudo {
+    max-width: 850px;
+}
+
+
+.destaque {
+    color: #38bdf8;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
     margin-bottom: 10px;
 }
 
-header p {
+
+.inicio h2 {
+    font-size: 58px;
+
+    line-height: 1.2;
+
     margin-bottom: 20px;
 }
 
-/* Menu */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+
+.texto-inicio {
+    font-size: 21px;
+
+    margin-bottom: 35px;
 }
 
-nav a {
+
+/* ========================================= */
+/* BOTÃO */
+/* ========================================= */
+
+.botao {
+    display: inline-block;
+
+    background-color: #0284c7;
+
     color: white;
-    text-decoration: none;
+
+    padding: 15px 32px;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+
+.botao:hover {
+    background-color: #0369a1;
+
+    transform: translateY(-3px);
 }
 
-/* Conteúdo principal */
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px 20px;
+
+/* ========================================= */
+/* SOBRE */
+/* ========================================= */
+
+.sobre {
+    padding: 90px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
 }
 
-/* Seções */
-section {
-    background-color: white;
-    margin-bottom: 30px;
-    padding: 30px;
-    border-radius: 10px;
+
+.sobre-texto {
+    width: 50%;
 }
 
-section h2 {
+
+.sobre-texto h2 {
+    font-size: 42px;
+
+    color: #0a2540;
+
     margin-bottom: 20px;
 }
 
-/* Atrações usando CSS Grid */
-#atracoes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+.sobre-texto p {
+    color: #444444;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================= */
+/* NÚMEROS */
+/* ========================================= */
+
+.numeros {
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
     gap: 20px;
 }
 
-#atracoes h2 {
-    grid-column: 1 / -1;
+
+.numero {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
 }
 
-article {
-    background-color: #eeeeee;
-    padding: 20px;
-    border-radius: 8px;
+
+.numero h3 {
+    color: #0284c7;
+
+    font-size: 38px;
 }
 
-article h3 {
+
+.numero p {
+    color: #555555;
+}
+
+
+/* ========================================= */
+/* ATRAÇÕES */
+/* ========================================= */
+
+.atracoes {
+    background-color: #eaf2f8;
+
+    padding: 90px 8%;
+}
+
+
+.titulo-secao {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+}
+
+
+.titulo-secao h2 {
+    font-size: 42px;
+
+    color: #0a2540;
+
     margin-bottom: 10px;
 }
 
-/* Formulário usando Flexbox */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.titulo-secao p {
+    color: #555555;
+
+    font-size: 18px;
 }
 
-input {
-    padding: 10px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
+
+/* ========================================= */
+/* CSS GRID */
+/* ========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
 }
 
-button {
-    margin-top: 10px;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #202a44;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+
+.card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #35466d;
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Rodapé */
-footer {
-    background-color: #202a44;
-    color: white;
+
+.card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+.card-conteudo {
+    padding: 25px;
+}
+
+
+.card h3 {
+    color: #0a2540;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    color: #555555;
+}
+
+
+/* ========================================= */
+/* INFORMAÇÕES */
+/* ========================================= */
+
+.informacoes {
+    padding: 90px 8%;
+}
+
+
+.informacoes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.info {
+    background-color: white;
+
+    padding: 35px 20px;
+
     text-align: center;
-    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
 }
 
-/* Celular */
-@media (max-width: 700px) {
 
-    nav {
+.info:hover {
+    transform: translateY(-5px);
+}
+
+
+.info span {
+    font-size: 40px;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+
+.info h3 {
+    color: #0a2540;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.info p {
+    color: #555555;
+}
+
+
+/* ========================================= */
+/* INSCRIÇÃO */
+/* ========================================= */
+
+.inscricao {
+    background-color: #0a2540;
+
+    color: white;
+
+    padding: 90px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+.inscricao-texto {
+    width: 50%;
+}
+
+
+.inscricao-texto h2 {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.inscricao-texto p {
+    font-size: 18px;
+
+    color: #dbeafe;
+
+    max-width: 500px;
+}
+
+
+/* ========================================= */
+/* FORMULÁRIO */
+/* ========================================= */
+
+.formulario {
+    width: 50%;
+
+    background-color: white;
+
+    color: #222222;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+.formulario label {
+    color: #0a2540;
+
+    font-weight: bold;
+}
+
+
+.formulario input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.formulario input:focus {
+    border-color: #0284c7;
+}
+
+
+/* ========================================= */
+/* BOTÃO FORMULÁRIO */
+/* ========================================= */
+
+.formulario button {
+    background-color: #0284c7;
+
+    color: white;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.formulario button:hover {
+    background-color: #0369a1;
+}
+
+
+/* ========================================= */
+/* RODAPÉ */
+/* ========================================= */
+
+.rodape {
+    background-color: #06182a;
+
+    color: white;
+
+    padding: 45px 8%;
+
+    text-align: center;
+}
+
+
+.rodape h2 {
+    color: #38bdf8;
+
+    margin-bottom: 10px;
+}
+
+
+.rodape p {
+    color: #d1d5db;
+
+    margin-top: 5px;
+}
+
+
+/* ========================================= */
+/* RESPONSIVIDADE - TABLET */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
         flex-direction: column;
-        gap: 10px;
+
+        gap: 20px;
     }
 
-    #atracoes {
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .inicio h2 {
+        font-size: 45px;
+    }
+
+
+    .sobre {
+        flex-direction: column;
+    }
+
+
+    .sobre-texto {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .numeros {
+        width: 100%;
+    }
+
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .informacoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .inscricao {
+        flex-direction: column;
+    }
+
+
+    .inscricao-texto {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .formulario {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+}
+
+
+/* ========================================= */
+/* RESPONSIVIDADE - CELULAR */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 20px;
+    }
+
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    .inicio {
+        min-height: 500px;
+
+        padding: 50px 20px;
+    }
+
+
+    .inicio h2 {
+        font-size: 35px;
+    }
+
+
+    .texto-inicio {
+        font-size: 17px;
+    }
+
+
+    .sobre {
+        padding: 60px 20px;
+    }
+
+
+    .sobre-texto h2 {
+        font-size: 32px;
+    }
+
+
+    .numeros {
+        flex-direction: column;
+    }
+
+
+    .atracoes {
+        padding: 60px 20px;
+    }
+
+
+    .titulo-secao h2 {
+        font-size: 32px;
+    }
+
+
+    .cards {
         grid-template-columns: 1fr;
     }
-}
 
-.img {
-    max-width: 100%;
-       height: auto;
-       border-radius: 10px;
+
+    .informacoes {
+        padding: 60px 20px;
+    }
+
+
+    .informacoes-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .inscricao {
+        padding: 60px 20px;
+    }
+
+
+    .inscricao-texto h2 {
+        font-size: 34px;
+    }
+
+
+    .formulario {
+        padding: 25px 20px;
+    }
+
+
+    .rodape {
+        padding: 35px 20px;
+    }
+
 }

@@ -1,87 +1,375 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campeonato Roblox 2026</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Festival de Tecnologia 2026</title>
+
+    <!-- Conexão com o CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Campeonato Roblox 2026</h1>
-        <p>Prepare-se para competir, superar desafios e conquistar o primeiro lugar.</p>
-        <img src="imagens/campeonato.jpg" alt="Imagem do Campeonato Roblox 2026">
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-        <nav>
+        <div class="logo">
+            <h1>TechFest 2026</h1>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#inicio">Início</a>
+
             <a href="#sobre">Sobre</a>
+
             <a href="#atracoes">Atrações</a>
+
+            <a href="#informacoes">Informações</a>
+
             <a href="#inscricao">Inscrição</a>
+
         </nav>
+
     </header>
 
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <section id="sobre">
-            <h2>Sobre o Evento</h2>
+        <!-- SEÇÃO INICIAL -->
+        <section id="inicio" class="inicio">
 
-            <p>
-                O Campeonato Roblox 2026 é um evento competitivo para jogadores
-                que gostam de desafios, obbys e competições dentro do Roblox.
-            </p>
+            <div class="inicio-conteudo">
 
-            <p>Data: 20 de outubro de 2026</p>
-            <p>Horário: 19:00</p>
-            <p>Local: Evento online</p>
+                <p class="destaque">
+                    Tecnologia • Inovação • Conhecimento
+                </p>
+
+                <h2>
+                    Festival de Tecnologia 2026
+                </h2>
+
+                <p class="texto-inicio">
+                    Um evento criado para estudantes, profissionais e
+                    pessoas apaixonadas por tecnologia.
+                </p>
+
+                <a href="#inscricao" class="botao">
+                    Quero participar
+                </a>
+
+            </div>
+
         </section>
 
-        <section id="atracoes">
-            <h2>Atrações</h2>
 
-            <article>
-                <h3>Desafio Obby</h3>
-                <p>Complete o percurso no menor tempo possível.</p>
-            </article>
+        <!-- SOBRE -->
+        <section id="sobre" class="sobre">
 
-            <article>
-                <h3>Corrida</h3>
-                <p>Dispute contra outros jogadores e tente chegar em primeiro lugar.</p>
-            </article>
+            <div class="sobre-texto">
 
-            <article>
-                <h3>Batalha PvP</h3>
-                <p>Enfrente outros participantes em uma competição de habilidade.</p>
-            </article>
+                <h2>Sobre o Evento</h2>
+
+                <p>
+                    O Festival de Tecnologia 2026 é um evento voltado
+                    para pessoas interessadas em programação,
+                    desenvolvimento de sistemas, inteligência artificial,
+                    inovação e novas tecnologias.
+                </p>
+
+                <p>
+                    Durante o evento, os participantes poderão acompanhar
+                    palestras, participar de workshops e conhecer projetos
+                    desenvolvidos por estudantes e profissionais.
+                </p>
+
+            </div>
+
+
+            <div class="numeros">
+
+                <article class="numero">
+
+                    <h3>20+</h3>
+
+                    <p>Palestras</p>
+
+                </article>
+
+
+                <article class="numero">
+
+                    <h3>10+</h3>
+
+                    <p>Workshops</p>
+
+                </article>
+
+
+                <article class="numero">
+
+                    <h3>500+</h3>
+
+                    <p>Participantes</p>
+
+                </article>
+
+            </div>
+
         </section>
 
-        <section id="inscricao">
-            <h2>Inscrição</h2>
 
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
+        <!-- ATRAÇÕES -->
+        <section id="atracoes" class="atracoes">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <div class="titulo-secao">
 
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade">
+                <h2>Principais Atrações</h2>
 
-                <button type="submit">Quero Participar</button>
+                <p>
+                    Confira algumas das atividades disponíveis durante
+                    o festival.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <!-- CARD 1 -->
+                <article class="card">
+
+                    <img
+                        src="imagens/palestra.jpg"
+                        alt="Palestra sobre tecnologia"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Palestras</h3>
+
+                        <p>
+                            Profissionais da área apresentarão assuntos
+                            relacionados a programação, inteligência
+                            artificial, segurança e inovação.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+                <article class="card">
+
+                    <img
+                        src="imagens/workshop.jpg"
+                        alt="Workshop de programação"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Workshops</h3>
+
+                        <p>
+                            Participe de atividades práticas sobre
+                            desenvolvimento web, programação e criação
+                            de novos projetos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+                <article class="card">
+
+                    <img
+                        src="imagens/exposicao.jpg"
+                        alt="Exposição de projetos tecnológicos"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Exposição de Projetos</h3>
+
+                        <p>
+                            Conheça projetos desenvolvidos por estudantes,
+                            empresas e profissionais da área de tecnologia.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES -->
+        <section id="informacoes" class="informacoes">
+
+            <div class="titulo-secao">
+
+                <h2>Informações do Evento</h2>
+
+                <p>
+                    Confira as principais informações para participar.
+                </p>
+
+            </div>
+
+
+            <div class="informacoes-grid">
+
+                <article class="info">
+
+                    <span>📅</span>
+
+                    <h3>Data</h3>
+
+                    <p>10 de outubro de 2026</p>
+
+                </article>
+
+
+                <article class="info">
+
+                    <span>🕒</span>
+
+                    <h3>Horário</h3>
+
+                    <p>09:00 às 18:00</p>
+
+                </article>
+
+
+                <article class="info">
+
+                    <span>📍</span>
+
+                    <h3>Local</h3>
+
+                    <p>Centro de Eventos</p>
+
+                </article>
+
+
+                <article class="info">
+
+                    <span>🎟️</span>
+
+                    <h3>Entrada</h3>
+
+                    <p>Gratuita</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- INSCRIÇÃO -->
+        <section id="inscricao" class="inscricao">
+
+            <div class="inscricao-texto">
+
+                <h2>Faça sua Inscrição</h2>
+
+                <p>
+                    Preencha seus dados para participar do Festival
+                    de Tecnologia 2026.
+                </p>
+
+            </div>
+
+
+            <form class="formulario">
+
+                <label for="nome">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Digite seu telefone"
+                >
+
+
+                <label for="cidade">
+                    Cidade
+                </label>
+
+                <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Digite sua cidade"
+                >
+
+
+                <button type="submit">
+                    Confirmar Inscrição
+                </button>
+
             </form>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Campeonato Roblox. Todos os direitos reservados.</p>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <h2>TechFest 2026</h2>
+
+        <p>
+            Festival de Tecnologia e Inovação.
+        </p>
+
+        <p>
+            Trabalho Prático - Desenvolvimento de Landing Page
+        </p>
+
     </footer>
 
 </body>
 
 </html>
-```
